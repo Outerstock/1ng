@@ -10,7 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   imports: [
@@ -33,6 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
       {
         path: 'shipping',
         component: ShippingComponent
+      },
+      {
+        path: 'map',
+        component: MapComponent
       }
     ])
   ],
@@ -43,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    MapComponent
   ],
   providers: [ HttpClientModule ],
   bootstrap: [ AppComponent ]
