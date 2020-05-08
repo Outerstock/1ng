@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { MouseEvent } from '@agm/core';
-import * as MarkerClusterer from "@google/markerclusterer"
+import MarkerClusterer from "@google/markerclusterer"
 
 @Component({
   selector: 'app-map',
@@ -64,6 +63,7 @@ export class MapComponent implements AfterViewInit {
 	  },
 	];
 	
+	
 	//Coordinates to set the center of the map
 	coordinates = new google.maps.LatLng(this.lat, this.lng);
   
@@ -80,6 +80,7 @@ export class MapComponent implements AfterViewInit {
 	});
   
 	// Clusterer = new MarkerClusterer(this.map, this.marker, this.mapOptions)
+	// markerCluster = new MarkerClusterer(this.map, this.marker, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'})
 
 	ngAfterViewInit(): void {
 	  this.mapInitializer();
@@ -102,7 +103,7 @@ export class MapComponent implements AfterViewInit {
 	  //Adding other markers
 	  this.loadAllMarkers();
 	}
-  
+
 	loadAllMarkers(): void {
 	  this.markers.forEach(markerInfo => {
 		//Creating a new marker object

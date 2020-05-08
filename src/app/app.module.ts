@@ -11,7 +11,11 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapComponent } from './map/map.component';
-
+import { HelloworldComponent } from './helloworld/helloworld.component';
+import { ChildComponent } from './child/child.component';
+import { HelloService } from './hello.service';
+import { ApimapComponent } from './apimap/apimap.component';
+import { HomeComponent } from './home/home.component'
 @NgModule({
   imports: [
     BrowserModule,
@@ -37,6 +41,18 @@ import { MapComponent } from './map/map.component';
       {
         path: 'map',
         component: MapComponent
+      },
+      {
+        path: 'hello',
+        component: HelloworldComponent
+      },
+      {
+        path: 'apimap',
+        component: ApimapComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
       }
     ])
   ],
@@ -48,9 +64,13 @@ import { MapComponent } from './map/map.component';
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    MapComponent
+    MapComponent,
+    HelloworldComponent,
+    ChildComponent,
+    ApimapComponent,
+    HomeComponent
   ],
-  providers: [ HttpClientModule ],
+  providers: [ HttpClientModule , HelloService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

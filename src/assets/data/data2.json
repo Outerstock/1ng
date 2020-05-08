@@ -1,0 +1,48 @@
+
+[
+	{
+		"name": "CATTower",
+		"location": {
+			"latitude": 13.726347648462,
+			"longitude": 100.51451683497
+		},
+		"description": "",
+		"province": "กรุงเทพมหานคร",
+		"amphur": "บางรัก",
+		"district": "บางรัก",
+		"province_id": "1",
+		"amphur_id": "4",
+		"district_id": "31",
+		"id": "cat1"
+	},
+	{
+		"name": "ศูนย์บริการลูกค้าบางรัก",
+		"location": {
+			"latitude": 13.727716452637,
+			"longitude": 100.51571779435
+		},
+		"description": "",
+		"province": "กรุงเทพมหานคร",
+		"amphur": "บางรัก",
+		"district": "บางรัก",
+		"province_id": "1",
+		"amphur_id": "4",
+		"district_id": "31",
+		"id": "cat2"
+	},
+	{
+		"name": "หอพักกองฝึกอบรมหลักสี่",
+		"location": {
+			"latitude": 13.886870410863,
+			"longitude": 100.570037614
+		},
+		"description": "",
+		"province": "กรุงเทพมหานคร",
+		"amphur": "หลักสี่",
+		"district": "ทุ่งสองห้อง",
+		"province_id": "1",
+		"amphur_id": "41",
+		"district_id": "218",
+		"id": "cat3"
+	}
+]
